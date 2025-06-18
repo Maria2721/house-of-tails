@@ -1,3 +1,6 @@
+@import 'normalize.css';
+
+/* CSS Variables */
 :root {
   /* Colors */
   --color-light-xl: #fff;
@@ -15,6 +18,76 @@
   --footer-gradient-background: #211f20;
 
   /* Fonts */
-  --font-family: "Georgia", sans-serif;
-  --second-family: "Arial", sans-serif;
+  --font-family: "Georgia", "Times New Roman", serif;
+  --second-family: "Arial", Helvetica, sans-serif;
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+  font-family: var(--font-family);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-light-xl);
+  color: var(--color-dark-xl);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Visual elements */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Lists */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Buttons and inputs */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
 }
